@@ -41,7 +41,8 @@
     // Use Map to return an array of strings that contain a full description of the weather.
     var des = ""
     for (i=0;i<forecast.length;i++) {
-
+        des = `${forecast[i].date} ${forecast[i].description} ${forecast[i].temp} degrees`;
+        console.log(des);
     }
 
     // For example: "03-23-2016 Cloudy 56 degrees" where the info comes from each of the weather objects. 
