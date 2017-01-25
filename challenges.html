@@ -34,7 +34,7 @@
         sum_temp += Number(temperature);
         console.log(sum_temp)
     }
-    avg_temp = sum_temp/forecast.length;
+    avg_temp = parseFloat(sum_temp/forecast.length).toFixed(2);
     console.log(avg_temp);
 
 
