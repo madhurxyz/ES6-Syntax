@@ -12,9 +12,12 @@
     		this.date = new Date()
 
     	}
+    	getWeather() {
+    		return `It is ${this.temp} degrees on ${this.date} and ${this.description}`;
+    	}
     }
     const rainy = new Weather("53", "Rainy");
-    console.log(rainy);
+    console.log(rainy.getWeather());
     
     // Make an array of three weather Objects each with some different values. 
     
