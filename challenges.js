@@ -1,4 +1,4 @@
-<script>
+
 // Challenges! 
     // For each of these challenges use the ideas from this file. Use the "fat arrow functions" 
     // ()=>{} and the ES6 style class defintion.
@@ -38,6 +38,10 @@
     console.log(avg_temp);
 
 
-    // Use Map to return an array of strings that contain a full description of the weather. 
+    // Use Map to return an array of strings that contain a full description of the weather.
+    var des = ""
+    for (i=0;i<forecast.length;i++) {
+
+    }
+
     // For example: "03-23-2016 Cloudy 56 degrees" where the info comes from each of the weather objects. 
-</script>
