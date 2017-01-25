@@ -5,7 +5,19 @@
     
     // Define a class that describes weather data it should take three parameters:
     // temp, date (use new Date() to make a date object), and description (eg cloudy, rainy etc.)
+    class Weather {
+    	constructor(temp, date, description) {
+    		this.temp = temp;
+    		this.date = new Date();
+    		this.description = description;
 
+    	}
+    	getWeather() {
+    		return 'It is ${this.temp} degrees on ${this.date} and ${this.description}';
+    	}
+    }
+    const w = new Weather("53", "Jan 24th, 2017", "Cloudy");
+    console.log(w.getWeather());
     
     // Make an array of three weather Objects each with some different values. 
     
