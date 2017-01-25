@@ -24,10 +24,18 @@
     const cloudy = new Weather("45", "Cloudy");
     var forecast = [rainy, sunny, cloudy];
     console.log(forecast);
-    // Use reduce to calculate the average temp for all objects. 
+    // Use reduce to calculate the average temp for all objects.
+    var temperature = 0;
+    var sum_temp = 0;
+    var avg_temp = 0.0;
     for (i=0;i<forecast.length;i++) {
-        temperature = forecast[i].temp
+        temperature = forecast[i].temp;
+        console.log(temperature);
+        sum_temp += Number(temperature);
+        console.log(sum_temp)
     }
+    avg_temp = sum_temp/forecast.length;
+    console.log(avg_temp);
 
 
     // Use Map to return an array of strings that contain a full description of the weather. 
